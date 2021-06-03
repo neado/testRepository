@@ -213,7 +213,43 @@ git add .
 
 
 
+**提交并解释**
 
+```
+$ git commit -m 'first-commmit'
+
+```
+
+
+
+**提交**
+
+```
+ git push origin master
+
+```
+
+
+
+**成功**
+
+```
+Warning: Permanently added the RSA host key for IP address '52.74.223.119' to th
+e list of known hosts.
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 2.09 KiB | 2.09 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/neado/testRepository/pull/new/master
+remote:
+To github.com:neado/testRepository.git
+ * [new branch]      master -> master
+
+```
 
 **暂存区提交到git仓库**
 
@@ -230,4 +266,6 @@ git remote add origin git@github.com:neado/testRepository.git
 ```
 
 > github帐号名）/gitdemo（项目名）.git 
+
+
 
