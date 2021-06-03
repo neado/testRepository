@@ -269,3 +269,61 @@ git remote add origin git@github.com:neado/testRepository.git
 
 
 
+
+
+git全局设置
+
+用户名
+
+邮箱
+
+
+
+mkdir cgb2104
+
+cd cgb2104
+
+git init
+
+touch README.md 
+
+> 创建.md
+
+git add README.md
+
+> 添加文件到暂存区
+
+git add test.txt
+
+git add .
+
+> 添加当前所有文件到暂存区
+
+git commit -m "写的关于此次提交的注释"
+
+> 提交到本地仓库，并写上注释
+
+git remote add origin git@github.com:neado/testRepository.git 
+
+> 把本地仓库和远程仓库绑定
+
+git push -u origin master
+
+> 提交到远程仓库
+
+
+
+# BUG
+
+## git error: src refspec dev does not match any 
+
+
+
+原因
+git push时选取的本地分支进行推送，如果推送的分支在本地分支中不存在，就会产生报错src refspec main does not match any
+
+解决
+创建一个对应的main branch：
+
+git checkout -b main
+创建之后然后再推送即可。
